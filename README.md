@@ -1,0 +1,1 @@
+Professional portfolio project files, bilingual Arabic/English site, GitHub Pages deployment, SEO, interactive tools, CV, and brand assets.
