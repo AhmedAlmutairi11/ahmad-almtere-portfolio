@@ -367,4 +367,317 @@ nav a:focus-visible {
 
 .card p {
   flex: 1;
-  margin:
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.card button {
+  align-self: flex-start;
+  padding: 0 0 4px;
+  color: var(--navy);
+  border: 0;
+  border-bottom: 1px solid var(--gold);
+  background: none;
+  font-weight: 700;
+}
+
+.cases {
+  background: var(--white);
+}
+
+.fineprint,
+.privacy {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.fineprint {
+  margin-top: 20px;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.tool-grid {
+  align-items: start;
+}
+
+.tool-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.tool-card h3 {
+  margin: 0 0 20px;
+  font-size: 23px;
+}
+
+.tool-card form,
+#request-form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  color: var(--navy);
+  border: 1px solid #cbd3dd;
+  border-radius: 5px;
+  background: var(--white);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.tool-output {
+  margin-top: 18px;
+  font-size: 13px;
+  white-space: pre-wrap;
+}
+
+.tool-output:not(:empty) {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.tool-output button {
+  margin: 10px 8px 0 0;
+}
+
+.scorebar {
+  height: 12px;
+  margin: 10px 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #e5e9ee;
+}
+
+.scorebar i {
+  display: block;
+  height: 100%;
+  background: var(--gold);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+}
+
+.contact-layout > div > p {
+  color: var(--muted);
+}
+
+.email {
+  border-bottom: 1px solid var(--gold);
+  font: 600 20px "DM Sans", sans-serif;
+  word-break: break-word;
+}
+
+.flow {
+  display: grid;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.flow span {
+  padding-inline-start: 12px;
+  border-inline-start: 2px solid var(--gold);
+}
+
+#request-form {
+  padding: 30px;
+  background: var(--cream);
+}
+
+#form-status {
+  min-height: 24px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#form-status.success {
+  color: var(--success);
+}
+
+#form-status.error {
+  color: var(--danger);
+}
+
+footer {
+  color: var(--white);
+  background: #0b1523;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 85px;
+  gap: 20px;
+  font: 12px "DM Sans", Cairo, sans-serif;
+}
+
+.footer a {
+  font-family: Cairo, sans-serif;
+}
+
+dialog {
+  width: min(650px, calc(100% - 24px));
+  max-height: 85vh;
+  padding: 30px;
+  overflow: auto;
+  color: var(--navy);
+  border: 0;
+  border-radius: 9px;
+}
+
+dialog::backdrop {
+  background: #0c1625c7;
+}
+
+#dialog-close {
+  float: inline-end;
+  border: 0;
+  background: none;
+  font-size: 27px;
+}
+
+dialog h2 {
+  clear: both;
+  margin-top: 12px;
+  font-size: 28px;
+}
+
+dialog p,
+dialog li {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+:focus-visible {
+  outline: 3px solid #b48943;
+  outline-offset: 3px;
+}
+
+@media (max-width: 980px) {
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portrait-frame {
+    min-height: 500px;
+  }
+
+  .portrait-frame img {
+    max-height: 480px;
+  }
+
+  .contact-layout {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    height: 66px;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 66px;
+    inset-inline: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px;
+    background: var(--navy);
+    box-shadow: 0 20px 40px #0003;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    padding: 6px;
+    font-size: 15px;
+  }
+
+  .hero-grid,
+  .about-layout,
+  .experience-grid,
+  .card-grid,
+  .two-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid {
+    gap: 0;
+  }
+
+  .hero-copy {
+    padding: 60px 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .portrait-frame {
+    min-height: 350px;
+  }
+
+  .portrait-frame img {
+    max-height: 350px;
+  }
+
+  .portrait-halo {
+    bottom: 40px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .card {
+    min-height: 230px;
+  }
+
+  #request-form {
+    padding: 20px;
+  }
+}
