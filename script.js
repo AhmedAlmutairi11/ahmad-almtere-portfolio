@@ -3,10 +3,10 @@ const serviceData = [
     id: "procedures",
     ar: "تحسين الإجراءات",
     en: "Procedure Improvement",
-    summaryAr: "مراجعة الإجراء الحالي، تحديد الأدوار ونقاط التعثر، وتصميم خطوات أوضح قابلة للتطبيق والمتابعة.",
-    summaryEn: "Reviewing a current procedure, clarifying roles and bottlenecks, and designing clearer, practical steps.",
-    detailAr: "نراجع الخطوات الحالية والمسؤوليات ونقاط التأخير أو التكرار، ثم نرتب الإجراء في مسار واضح مع نموذج متابعة مناسب لطبيعة العمل.",
-    detailEn: "We review current steps, responsibilities, delays, and duplication, then organize the procedure into a clear workflow with a suitable follow-up format.",
+    summaryAr: "مراجعة الإجراء الحالي وتحديد الأدوار ونقاط التعثر، ثم بناء خطوات أوضح قابلة للتطبيق والمتابعة.",
+    summaryEn: "Reviewing the current procedure, clarifying roles and bottlenecks, then building clearer steps for implementation and follow-up.",
+    detailAr: "نراجع الخطوات الحالية والمسؤوليات ونقاط التأخير أو التكرار. يشمل ذلك إجراءات العمليات والطلبات والتوريد عند ارتباطها بالعمل، ثم نرتب المسار في خطوات واضحة وسجل متابعة مناسب.",
+    detailEn: "We review current steps, responsibilities, delays, and duplication. This can include operations, requests, and supply procedures where relevant, then organize the workflow into clear steps and a suitable follow-up record.",
     questions: [
       ["اسم الإجراء أو العملية", "Process or procedure name"],
       ["المشكلة الحالية أو نقطة التعثر", "Current problem or bottleneck"]
@@ -16,10 +16,10 @@ const serviceData = [
     id: "operations",
     ar: "التنظيم التشغيلي",
     en: "Operational Organization",
-    summaryAr: "تنظيم تدفق العمل والطلبات بين الإدارات، وتوضيح المسؤوليات وحالات المتابعة وتقليل التكرار والتأخير.",
-    summaryEn: "Organizing workflows and requests across departments, clarifying ownership and follow-up, and reducing delay.",
-    detailAr: "نرسم رحلة العمل أو الطلب، نحدد الأطراف والخطوات وحالات المتابعة، ثم نقترح تنظيمًا عمليًا يساعد على وضوح المسؤوليات وسرعة الإنجاز.",
-    detailEn: "We map the request or workflow journey, identify stakeholders, steps, and statuses, then propose a practical structure for clarity and speed.",
+    summaryAr: "تنظيم تدفق العمل والطلبات بين الإدارات، وتوضيح المسؤوليات وحالات المتابعة وتقليل التأخير.",
+    summaryEn: "Organizing workflows and requests across departments, clarifying ownership and follow-up, and reducing delays.",
+    detailAr: "نرسم رحلة العمل أو الطلب ونحدد الأطراف والخطوات وحالات المتابعة. يشمل ذلك تدفق الطلبات وقطع الغيار والتنسيق مع الموردين عندما يكون ذلك ضمن نطاق العمل، مع تحديد مسؤول لكل مرحلة.",
+    detailEn: "We map the request or workflow journey and identify stakeholders, steps, and statuses. This can include request and spare-parts flow and supplier coordination when relevant, with clear ownership for each stage.",
     questions: [
       ["العملية أو المجال المراد تنظيمه", "Process or area to organize"],
       ["التحدي التشغيلي الحالي", "Current operational challenge"]
@@ -29,10 +29,10 @@ const serviceData = [
     id: "contracts",
     ar: "العقود والمتابعة",
     en: "Contracts & Follow-up",
-    summaryAr: "تنظيم نطاق الخدمة، المتطلبات التشغيلية، سجلات المتابعة، وحالات العقود والموردين بطريقة أوضح.",
-    summaryEn: "Organizing service scope, operational requirements, follow-up records, and contract or supplier status.",
-    detailAr: "ندعم تنظيم نطاق الخدمة والمتطلبات التشغيلية ووسائل المتابعة المرتبطة بالعقود أو الموردين، دون تقديم استشارة قانونية أو بيئية مرخصة.",
-    detailEn: "We support the organization of service scope, operational requirements, and follow-up methods for contracts or suppliers, without providing licensed legal or environmental advice.",
+    summaryAr: "تنظيم نطاق الخدمة والمتطلبات التشغيلية وسجلات المتابعة وحالات العقود والموردين بطريقة أوضح.",
+    summaryEn: "Organizing service scope, operational requirements, follow-up records, and contract or supplier status more clearly.",
+    detailAr: "ندعم تنظيم نطاق الخدمة والمتطلبات التشغيلية ووسائل المتابعة المرتبطة بالعقود أو الموردين. يمكن أن يشمل ذلك نقاط المراجعة وحالات الطلبات ومسؤوليات المتابعة، دون تقديم استشارة قانونية أو بيئية مرخصة.",
+    detailEn: "We support the organization of service scope, operational requirements, and follow-up methods for contracts or suppliers. This can include review points, request statuses, and follow-up ownership, without providing licensed legal or environmental advice.",
     questions: [
       ["نوع العقد أو الخدمة", "Contract or service type"],
       ["المتطلبات أو المتابعة التي تحتاج تنظيمًا", "Requirements or follow-up to organize"]
@@ -44,8 +44,8 @@ const serviceData = [
     en: "Administrative Digitization",
     summaryAr: "تحويل المتابعة اليدوية الموزعة إلى نماذج وسجلات ومسارات عمل رقمية مبسطة وواضحة.",
     summaryEn: "Transforming scattered manual follow-up into simple, clear digital forms, records, and workflows.",
-    detailAr: "نحلل خطوات العمل اليدوية والبيانات المطلوبة والمسؤوليات وحالات الطلب، ثم نقترح نموذجًا أو مسار عمل رقميًا مبسطًا يناسب الاستخدام اليومي.",
-    detailEn: "We analyze manual work steps, required data, ownership, and request statuses, then propose a simple digital workflow suited to daily use.",
+    detailAr: "نحلل خطوات العمل اليدوية والبيانات المطلوبة والمسؤوليات وحالات الطلب. ثم نقترح نموذجًا أو سجلًا أو مسار عمل رقميًا مبسطًا يناسب الاستخدام اليومي، بما في ذلك الطلبات والموردون وقطع الغيار عند الحاجة.",
+    detailEn: "We analyze manual steps, required data, ownership, and request statuses. We then propose a simple digital form, register, or workflow suited to daily use, including requests, suppliers, and spare parts when needed.",
     questions: [
       ["العملية اليدوية الحالية", "Current manual process"],
       ["ما الذي تريد تحويله إلى متابعة رقمية؟", "What do you want to digitize?"]
@@ -55,46 +55,118 @@ const serviceData = [
 
 const caseData = [
   {
+    id: "industrial-waste",
     ar: "تحسين منظومة إدارة المخلفات الصناعية وخفض التكلفة",
     en: "Improving Industrial Waste Management and Reducing Cost",
     summaryAr: "تنظيم متطلبات الخدمة والتصنيفات التشغيلية وربطها بنطاق العمل والتكلفة والمتابعة.",
-    summaryEn: "Organizing service requirements and operational classifications while connecting scope, cost, and follow-up.",
-    challengeAr: "الحاجة إلى تنظيم متطلبات خدمة إدارة المخلفات الصناعية، ورفع وضوح التصنيفات التشغيلية وعلاقتها بنطاق العمل والتكلفة.",
+    summaryEn: "Organizing service requirements and operational classifications while linking scope, cost, and follow-up.",
+    overviewAr: "حالة تنظيمية ركزت على توضيح عناصر الخدمة وربط المتطلبات التشغيلية بنطاق العمل والمتابعة.",
+    overviewEn: "An organizational case focused on clarifying service elements and linking operational requirements to scope and follow-up.",
+    previousAr: "كانت المتطلبات والتصنيفات ومعلومات المتابعة موزعة بين أكثر من ملف أو نقطة اتصال، مما يصعّب تكوين صورة موحدة لنطاق الخدمة.",
+    previousEn: "Requirements, classifications, and follow-up information were distributed across multiple files or contact points, making it difficult to form a unified view of service scope.",
+    challengeAr: "الحاجة إلى تنظيم متطلبات خدمة إدارة المخلفات الصناعية ورفع وضوح التصنيفات التشغيلية وعلاقتها بنطاق العمل والتكلفة.",
     challengeEn: "A need to organize industrial waste-management service requirements and clarify operational classifications, service scope, and cost.",
     roleAr: "مراجعة العناصر التشغيلية، ترتيب المتطلبات، وتحسين وضوح الربط بين نطاق الخدمة والمتابعة والتكلفة.",
     roleEn: "Reviewing operational elements, organizing requirements, and improving the connection between service scope, follow-up, and cost.",
     approachAr: "تحديد البيانات الأساسية، مراجعة نطاق الخدمة، تنظيم التصنيفات، وبناء تصور متابعة يساعد على وضوح الاحتياج والقرارات التشغيلية.",
     approachEn: "Identifying essential data, reviewing service scope, organizing classifications, and building a follow-up approach that supports clearer operational decisions.",
+    outputsAr: ["خريطة تدفق مبسطة للخدمة", "نموذج موحد لتجميع المتطلبات", "نقاط مراجعة لنطاق العمل", "سجل متابعة للحالات والملاحظات"],
+    outputsEn: ["A simplified service-flow map", "A unified requirements form", "Service-scope review points", "A follow-up register for statuses and notes"],
     impactAr: "تصور تشغيلي أوضح يدعم مراجعة نطاق العمل والتكلفة وتحسين متابعة الخدمة.",
-    impactEn: "A clearer operational model supporting service-scope and cost review, with better service follow-up."
+    impactEn: "A clearer operational model supporting service-scope and cost review, with improved service follow-up."
   },
   {
+    id: "spare-parts",
     ar: "تحسين تدفق قطع الغيار لتسريع إصلاح مركبات الحوادث",
     en: "Improving Spare-Parts Flow to Accelerate Accident-Vehicle Repairs",
     summaryAr: "توضيح رحلة طلب وتوريد قطع الغيار وتنظيم التنسيق والمتابعة بين الأطراف ذات العلاقة.",
     summaryEn: "Clarifying the spare-parts request and supply journey while organizing coordination and follow-up among stakeholders.",
-    challengeAr: "تأخر أو غموض في مراحل طلب وتوريد قطع الغيار، مع حاجة إلى رفع وضوح الحالة بين الأطراف المشاركة.",
-    challengeEn: "Delays or ambiguity across spare-parts request and supply stages, with a need for clearer status visibility among stakeholders.",
-    roleAr: "تحليل رحلة الطلب، تحديد نقاط التعثر والتنسيق، وتنظيم حالات المتابعة والمسؤوليات.",
-    roleEn: "Analyzing the request journey, identifying bottlenecks and coordination needs, and organizing follow-up statuses and ownership.",
-    approachAr: "تحديد مراحل الطلب من الاحتياج إلى التوريد، وتوضيح نقطة تسليم المسؤولية بين الأطراف، وإنشاء تصور لحالة طلب قابلة للمتابعة.",
-    approachEn: "Defining request stages from need to supply, clarifying handoffs between stakeholders, and creating a trackable request-status concept.",
-    impactAr: "مسار أكثر تنظيمًا وقابلية للقياس يساعد على تقليل التأخير وتحسين سرعة متابعة قطع الغيار.",
-    impactEn: "A more organized, measurable workflow that supports reduced delays and faster spare-parts follow-up."
+    overviewAr: "حالة تشغيلية وسلاسل إمداد ركزت على رحلة قطعة الغيار من الاحتياج حتى الاستلام ومتابعة الإصلاح.",
+    overviewEn: "An operations and supply-chain case focused on the spare part journey from need through receipt and repair follow-up.",
+    previousAr: "يمر طلب قطع الغيار بين أكثر من طرف: احتياج، مراجعة، اعتماد، طلب شراء، مورد، توريد، استلام، ثم متابعة الإصلاح. عند غياب حالة واضحة لكل مرحلة يصبح من الصعب معرفة أين توقف الطلب ومن المسؤول عنه.",
+    previousEn: "A spare-parts request moves across several parties: need, review, approval, purchase request, supplier, supply, receipt, and repair follow-up. Without a clear status for each stage, it becomes difficult to know where the request stopped and who owns it.",
+    challengeAr: "وجود تأخر أو غموض في مراحل طلب وتوريد قطع الغيار، مع حاجة إلى رفع وضوح حالة الطلب بين الأطراف ذات العلاقة.",
+    challengeEn: "Delays or ambiguity across spare-parts request and supply stages, with a need for clearer request-status visibility among related stakeholders.",
+    roleAr: "تحليل رحلة طلب قطعة الغيار من الاحتياج إلى التوريد، تحديد نقاط التعثر ونقاط تسليم المسؤولية، اقتراح حالات متابعة موحدة، وتنظيم تصور لسجل طلبات يسهل الرجوع إليه.",
+    roleEn: "Analyzing the spare-parts request journey from need to supply, identifying bottlenecks and responsibility handoffs, proposing unified statuses, and organizing a request-register concept that is easy to reference.",
+    approachAr: "تحديد مراحل الطلب الأساسية، وتعريف حالات متابعة مثل جديد، بانتظار اعتماد، قيد الطلب، بانتظار المورد، تم التوريد، ومغلق. ثم تحديد مسؤول المرحلة وتاريخ آخر تحديث ونقطة تصعيد عند تجاوز مدة متابعة محددة.",
+    approachEn: "Defining core request stages and statuses such as New, Pending Approval, On Order, Awaiting Supplier, Supplied, and Closed. Then identifying stage ownership, last-update date, and an escalation point when a defined follow-up duration is exceeded.",
+    outputsAr: ["خريطة تدفق طلب قطع الغيار", "سجل موحد لمتابعة الطلبات", "حالات متابعة واضحة", "تحديد مسؤول لكل مرحلة", "نموذج تصعيد للتأخير أو النقص"],
+    outputsEn: ["A spare-parts request flow map", "A unified request follow-up register", "Clear follow-up statuses", "An owner defined for each stage", "An escalation form for delays or shortages"],
+    impactAr: "سرعة أكبر في معرفة حالة أي طلب، تقليل الوقت الضائع في السؤال والمتابعة اليدوية، تحسين التنسيق بين الطلبات والموردين والإصلاح، وبيانات أوضح لدراسة أسباب التأخير.",
+    impactEn: "Faster visibility of every request’s status, less time lost to manual inquiries and follow-up, better coordination across requests, suppliers, and repair, and clearer data for analyzing causes of delay."
   },
   {
+    id: "hr-digitization",
     ar: "تطوير إدارة الموارد البشرية من الأرشيف الورقي إلى نظام رقمي",
     en: "Developing HR Administration from Paper Archives to a Digital System",
     summaryAr: "تحويل الملفات والمتابعة اليدوية إلى بنية رقمية أوضح للبيانات والطلبات والحالات والمسؤوليات.",
     summaryEn: "Transforming paper files and manual follow-up into a clearer digital structure for data, requests, statuses, and ownership.",
-    challengeAr: "الاعتماد على الأرشيف الورقي والملفات المتفرقة، مما يصعب الوصول إلى المعلومات ومتابعة الطلبات والحالات.",
-    challengeEn: "Reliance on paper archives and scattered files, making information retrieval and request tracking difficult.",
+    overviewAr: "حالة رقمنة إدارية ركزت على تنظيم السجلات والملفات وطلبات المتابعة في هيكل بيانات أوضح.",
+    overviewEn: "An administrative-digitization case focused on organizing records, files, and follow-up requests in a clearer data structure.",
+    previousAr: "كان الاعتماد على الأرشيف الورقي والملفات المتفرقة يجعل الوصول إلى المعلومات ومتابعة الطلبات والحالات أكثر صعوبة.",
+    previousEn: "Reliance on paper archives and scattered files made information retrieval and request-status follow-up more difficult.",
+    challengeAr: "الحاجة إلى تحويل الملفات اليدوية إلى بنية رقمية منظمة تدعم وضوح البيانات والمسؤوليات وحالة كل طلب أو ملف.",
+    challengeEn: "A need to transform manual files into an organized digital structure that supports clarity of data, ownership, and each request or file status.",
     roleAr: "تحليل الاحتياج إلى البيانات والسجلات، وتحديد الحقول الأساسية ومسارات المتابعة المناسبة للرقمنة.",
     roleEn: "Analyzing data and record needs, identifying core fields, and defining appropriate digital follow-up workflows.",
     approachAr: "حصر أنواع الملفات والبيانات، تحديد صلاحيات ومسؤوليات التحديث، ثم تصميم تصور لنموذج موحد وسجل رقمي لحالة الطلبات والملفات.",
-    approachEn: "Inventorying file and data types, defining update ownership, then designing a unified form and digital register for requests and records.",
-    impactAr: "تصور رقمي يساعد على تنظيم السجلات، سرعة استرجاع البيانات، ووضوح حالة الطلبات والمتابعة.",
+    approachEn: "Inventorying file and data types, defining update permissions and ownership, then designing a unified form and digital register for requests and records.",
+    outputsAr: ["هيكل بيانات رقمي", "نموذج موحد لإدخال الطلبات", "سجل حالة للملفات والطلبات", "مصفوفة مسؤوليات للتحديث والمتابعة"],
+    outputsEn: ["A digital data structure", "A unified request-entry form", "A status register for files and requests", "A responsibility matrix for updates and follow-up"],
+    impactAr: "تصور رقمي يساعد على تنظيم السجلات وسرعة استرجاع البيانات ووضوح حالة الطلبات والمتابعة.",
     impactEn: "A digital concept that supports organized records, faster information retrieval, and clearer request and follow-up status."
+  }
+];
+
+const certificationData = [
+  {
+    id: "cpim",
+    shortName: "CPIM",
+    nameAr: "إدارة الإنتاج والمخزون المعتمدة",
+    nameEn: "Certified in Production and Inventory Management",
+    provider: "APICS / ASCM",
+    file: "APICS_CPIM_Original_Certificate_A4%20(2).pdf",
+    descriptionAr: "تغطي مفاهيم تخطيط الإنتاج وإدارة المخزون وتدفق المواد وتحسين توافر المنتجات وموازنة العرض والطلب.",
+    descriptionEn: "Covers production planning, inventory management, material flow, improving product availability, and balancing supply and demand.",
+    relevanceAr: "تدعم تحليل تدفق الطلبات وقطع الغيار، تنظيم المخزون، متابعة التوريد، وتقليل نقاط التعثر في العمليات.",
+    relevanceEn: "Supports analysis of request and spare-parts flow, inventory organization, supply follow-up, and reducing operational bottlenecks."
+  },
+  {
+    id: "ciscp",
+    shortName: "CISCP",
+    nameAr: "محترف سلاسل الإمداد الدولي المعتمد",
+    nameEn: "Certified International Supply Chain Professional",
+    provider: "IPSCMI",
+    file: "CISCP.Degree.pdf",
+    descriptionAr: "تغطي مفاهيم إدارة سلاسل الإمداد والتنسيق بين الطلبات والموردين والتوريد والتخطيط والمتابعة.",
+    descriptionEn: "Covers supply-chain management concepts, coordination among requests, suppliers, sourcing, planning, and follow-up.",
+    relevanceAr: "تدعم تنظيم مسارات الطلبات، متابعة الموردين، تحسين تدفق قطع الغيار، وبناء سجلات متابعة تشغيلية.",
+    relevanceEn: "Supports organization of request routes, supplier follow-up, improved spare-parts flow, and building operational follow-up records."
+  },
+  {
+    id: "ciscm",
+    shortName: "CISCM",
+    nameAr: "مدير سلاسل الإمداد الدولي المعتمد",
+    nameEn: "Certified International Supply Chain Manager",
+    provider: "IPSCMI",
+    file: "CISCM.pdf",
+    descriptionAr: "تتناول إدارة سلاسل الإمداد من منظور تشغيلي وإداري، وربط التخطيط والتنفيذ والأداء والتعاون مع الموردين.",
+    descriptionEn: "Addresses supply-chain management from an operational and administrative perspective, linking planning, execution, performance, and supplier collaboration.",
+    relevanceAr: "تدعم العمل على مؤشرات المتابعة، تنظيم العمليات، تحديد المسؤوليات، وتحسين وضوح التدفق التشغيلي.",
+    relevanceEn: "Supports work on follow-up indicators, operations organization, ownership definition, and improved operational-flow visibility."
+  },
+  {
+    id: "ciscc",
+    shortName: "CISCC",
+    nameAr: "مستشار سلاسل الإمداد الدولي المعتمد",
+    nameEn: "Certified International Supply Chain Consultant",
+    provider: "IPSCMI",
+    file: "ciscc.pdf",
+    descriptionAr: "تركز على تحليل تحديات سلسلة الإمداد، بناء التوصيات، وتحويل الاحتياج التشغيلي إلى حلول قابلة للتنفيذ والمتابعة.",
+    descriptionEn: "Focuses on analyzing supply-chain challenges, building recommendations, and converting operational needs into implementable, trackable solutions.",
+    relevanceAr: "تدعم تشخيص الإجراءات، تطوير خرائط العمل، مراجعة تدفق الطلبات، واقتراح خطوات تحسين عملية.",
+    relevanceEn: "Supports procedure diagnosis, workflow mapping, review of request flow, and practical improvement recommendations."
   }
 ];
 
@@ -103,6 +175,7 @@ let language = localStorage.getItem("portfolio-language") || "ar";
 const text = (ar, en) => (language === "ar" ? ar : en);
 const serviceGrid = document.querySelector("#service-grid");
 const caseGrid = document.querySelector("#case-grid");
+const certGrid = document.querySelector("#cert-grid");
 const serviceSelect = document.querySelector("#request-service");
 const serviceFields = document.querySelector("#service-fields");
 const dialog = document.querySelector("#detail-dialog");
@@ -110,6 +183,13 @@ const dialogBody = document.querySelector("#dialog-body");
 const languageButton = document.querySelector("#lang");
 const navigation = document.querySelector("#nav");
 const menuButton = document.querySelector("#menu");
+const cvStatus = document.querySelector("#cv-status");
+
+function trackEvent(name, properties = {}) {
+  if (typeof window.va === "function") {
+    window.va("event", { name, data: properties });
+  }
+}
 
 function element(tag, content = "", className = "") {
   const item = document.createElement(tag);
@@ -148,20 +228,50 @@ function renderCases() {
   });
 }
 
+function renderCertifications() {
+  certGrid.replaceChildren();
+  certificationData.forEach((certification) => {
+    const card = element("article", "", "card cert-card");
+    card.tabIndex = 0;
+    card.setAttribute("role", "button");
+    card.setAttribute("aria-label", text(`عرض تفاصيل شهادة ${certification.shortName}`, `View ${certification.shortName} certification details`));
+    const code = element("span", certification.shortName, "number");
+    const title = element("h3", text(certification.nameAr, certification.nameEn));
+    const provider = element("p", certification.provider, "cert-provider");
+    const button = element("button", text("عرض التفاصيل ↗", "View details ↗"));
+    button.type = "button";
+    const open = () => showCertification(certification);
+    button.addEventListener("click", open);
+    card.addEventListener("click", (event) => {
+      if (event.target !== button) open();
+    });
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        open();
+      }
+    });
+    card.append(code, title, provider, button);
+    certGrid.append(card);
+  });
+}
+
 function showService(service) {
   dialogBody.replaceChildren();
   const title = element("h2", text(service.ar, service.en));
   title.id = "detail-title";
   const description = element("p", text(service.detailAr, service.detailEn));
-  const requestButton = element("button", text("اطلب هذه الخدمة", "Request this service"), "btn gold");
+  const requestButton = element("button", text("اطلب هذه الخدمة", "Request this service"), "btn gold dialog-action");
   requestButton.type = "button";
   requestButton.addEventListener("click", () => {
+    trackEvent("Service Request Clicked", { service_id: service.id });
     dialog.close();
     serviceSelect.value = service.id;
     renderServiceFields();
     document.querySelector("#contact").scrollIntoView({ behavior: "smooth", block: "start" });
   });
   dialogBody.append(title, description, requestButton);
+  trackEvent("Service Details Opened", { service_id: service.id });
   dialog.showModal();
 }
 
@@ -172,6 +282,16 @@ function createCaseBlock(titleAr, titleEn, contentAr, contentEn) {
     element("h3", text(titleAr, titleEn)),
     element("p", text(contentAr, contentEn))
   );
+  return section;
+}
+
+function createCaseList(titleAr, titleEn, valuesAr, valuesEn) {
+  const section = document.createElement("section");
+  section.className = "case-detail-block";
+  const list = document.createElement("ul");
+  list.className = "case-detail-list";
+  (language === "ar" ? valuesAr : valuesEn).forEach((value) => list.append(element("li", value)));
+  section.append(element("h3", text(titleAr, titleEn)), list);
   return section;
 }
 
@@ -189,12 +309,36 @@ function showCase(item) {
   );
   dialogBody.append(
     title,
+    createCaseBlock("لمحة سريعة", "Quick Overview", item.overviewAr, item.overviewEn),
+    createCaseBlock("الوضع السابق", "Previous Situation", item.previousAr, item.previousEn),
     createCaseBlock("التحدي", "Challenge", item.challengeAr, item.challengeEn),
     createCaseBlock("الدور", "Role", item.roleAr, item.roleEn),
     createCaseBlock("النهج", "Approach", item.approachAr, item.approachEn),
-    createCaseBlock("الأثر", "Impact", item.impactAr, item.impactEn),
+    createCaseList("المخرجات", "Outputs", item.outputsAr, item.outputsEn),
+    createCaseBlock("الأثر المتوقع", "Expected Impact", item.impactAr, item.impactEn),
     privacy
   );
+  trackEvent("Case Study Opened", { case_id: item.id });
+  dialog.showModal();
+}
+
+function showCertification(certification) {
+  dialogBody.replaceChildren();
+  const title = element("h2", certification.shortName);
+  title.id = "detail-title";
+  const name = element("p", text(certification.nameAr, certification.nameEn));
+  const provider = element("p", `${text("الجهة: ", "Provider: ")}${certification.provider}`);
+  const descriptionSection = createCaseBlock("عن الشهادة", "About the Certification", certification.descriptionAr, certification.descriptionEn);
+  const relevanceSection = createCaseBlock("علاقتها بالخدمات", "How It Supports the Services", certification.relevanceAr, certification.relevanceEn);
+  const pdfLink = document.createElement("a");
+  pdfLink.className = "btn gold dialog-action";
+  pdfLink.href = certification.file;
+  pdfLink.target = "_blank";
+  pdfLink.rel = "noopener";
+  pdfLink.textContent = text("عرض الشهادة الأصلية PDF ↗", "View Original Certificate PDF ↗");
+  pdfLink.addEventListener("click", () => trackEvent("Certification PDF Opened", { certification_id: certification.id }));
+  dialogBody.append(title, name, provider, descriptionSection, relevanceSection, pdfLink);
+  trackEvent("Certification Opened", { certification_id: certification.id });
   dialog.showModal();
 }
 
@@ -216,6 +360,7 @@ function renderServiceOptions() {
 }
 
 function renderServiceFields() {
+  const previousValues = Array.from(serviceFields.querySelectorAll("input")).map((input) => input.value);
   serviceFields.replaceChildren();
   const selected = serviceData.find((service) => service.id === serviceSelect.value);
   if (!selected) return;
@@ -226,6 +371,7 @@ function renderServiceFields() {
     input.name = `service_detail_${index + 1}`;
     input.required = true;
     input.maxLength = 400;
+    input.value = previousValues[index] || "";
     label.append(input);
     serviceFields.append(label);
   });
@@ -243,24 +389,38 @@ function renderServiceFields() {
   }
 }
 
+function updateStaticText() {
+  document.querySelectorAll("[data-ar][data-en]").forEach((item) => {
+    item.textContent = item.dataset[language];
+  });
+  document.querySelectorAll("[data-placeholder-ar][data-placeholder-en]").forEach((item) => {
+    item.placeholder = item.dataset[`placeholder${language === "ar" ? "Ar" : "En"}`];
+  });
+  document.querySelectorAll("[data-alt-ar][data-alt-en]").forEach((item) => {
+    item.alt = item.dataset[`alt${language === "ar" ? "Ar" : "En"}`];
+  });
+  document.querySelectorAll("[data-label-ar][data-label-en]").forEach((item) => {
+    item.setAttribute("aria-label", item.dataset[`label${language === "ar" ? "Ar" : "En"}`]);
+  });
+}
+
 function setLanguage(nextLanguage) {
   language = nextLanguage;
   localStorage.setItem("portfolio-language", language);
   document.documentElement.lang = language;
   document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
-  document.querySelectorAll("[data-ar][data-en]").forEach((item) => {
-    item.textContent = item.dataset[language];
-  });
-  document.querySelectorAll("option[data-ar][data-en]").forEach((item) => {
-    item.textContent = item.dataset[language];
-  });
+  updateStaticText();
   languageButton.textContent = language === "ar" ? "English" : "العربية";
+  languageButton.setAttribute("aria-label", language === "ar" ? "Switch language" : "تبديل اللغة");
   document.title = text(
-    "أحمد المطيري | تطوير تنظيمي وتحسين عمليات",
-    "Ahmad Almtere | Organizational Development & Operations"
+    "أحمد محمد المطيري | تحسين العمليات وسلاسل الإمداد والرقمنة الإدارية",
+    "Ahmad Almutairi | Operations Improvement, Supply Chain & Administrative Digitization"
   );
+  const description = document.querySelector("meta[name='description']");
+  description.content = description.dataset[`description${language === "ar" ? "Ar" : "En"}`];
   renderServices();
   renderCases();
+  renderCertifications();
   renderServiceOptions();
   renderSupplierInputs();
 }
@@ -283,6 +443,43 @@ navigation.querySelectorAll("a").forEach((link) => {
 });
 document.querySelector("#year").textContent = new Date().getFullYear();
 
+const cvFile = "ahmad-almtere-cv.pdf";
+document.querySelector("#cv-view").addEventListener("click", () => trackEvent("CV Viewed"));
+document.querySelector("#cv-download").addEventListener("click", () => trackEvent("CV Downloaded"));
+document.querySelector("#cv-share").addEventListener("click", async () => {
+  const cvUrl = new URL(cvFile, window.location.href).href;
+  const shareData = {
+    title: "Ahmad Almutairi CV",
+    text: text("السيرة الذاتية لأحمد المطيري", "Ahmad Almutairi's CV"),
+    url: cvUrl
+  };
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+      cvStatus.textContent = text("تمت مشاركة رابط السيرة الذاتية.", "The CV link was shared.");
+    } else if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(cvUrl);
+      cvStatus.textContent = text("تم نسخ رابط السيرة الذاتية.", "The CV link was copied.");
+    } else {
+      const temporaryInput = document.createElement("textarea");
+      temporaryInput.value = cvUrl;
+      temporaryInput.setAttribute("readonly", "");
+      temporaryInput.style.position = "fixed";
+      temporaryInput.style.opacity = "0";
+      document.body.append(temporaryInput);
+      temporaryInput.select();
+      document.execCommand("copy");
+      temporaryInput.remove();
+      cvStatus.textContent = text("تم نسخ رابط السيرة الذاتية.", "The CV link was copied.");
+    }
+    trackEvent("CV Shared");
+  } catch (error) {
+    if (error.name !== "AbortError") {
+      cvStatus.textContent = text("تعذر مشاركة الرابط الآن. يمكنك فتح السيرة ونسخ الرابط.", "The link could not be shared now. You can open the CV and copy its link.");
+    }
+  }
+});
+
 const supplierCriteria = [
   { id: "quality", weight: 25, ar: "الجودة", en: "Quality", hintAr: "مدى مطابقة المنتجات أو الخدمات للمواصفات المتفق عليها.", hintEn: "How well products or services match agreed specifications." },
   { id: "delivery", weight: 25, ar: "الالتزام بالتسليم", en: "Delivery reliability", hintAr: "الالتزام بالموعد والكمية ودقة التسليم.", hintEn: "Reliability of timing, quantity, and delivery accuracy." },
@@ -295,6 +492,7 @@ const supplierCriteria = [
 const supplierInputs = document.querySelector("#supplier-inputs");
 
 function renderSupplierInputs() {
+  const savedValues = Object.fromEntries(Array.from(supplierInputs.querySelectorAll("select")).map((select) => [select.name, select.value]));
   supplierInputs.replaceChildren();
   supplierCriteria.forEach((criterion) => {
     const label = document.createElement("label");
@@ -307,7 +505,6 @@ function renderSupplierInputs() {
     placeholder.value = "";
     placeholder.textContent = text("اختر التقييم", "Choose a rating");
     placeholder.disabled = true;
-    placeholder.selected = true;
     select.append(placeholder);
     for (let score = 1; score <= 5; score += 1) {
       const option = document.createElement("option");
@@ -318,6 +515,7 @@ function renderSupplierInputs() {
       );
       select.append(option);
     }
+    select.value = savedValues[criterion.id] || "";
     label.append(title, hint, select);
     supplierInputs.append(label);
   });
@@ -417,8 +615,8 @@ document.querySelector("#supplier-form").addEventListener("submit", (event) => {
   if (!form.reportValidity()) return;
   const formData = new FormData(form);
   const supplierName = String(formData.get("supplier") || "").trim();
-  if (!supplierName) return;
   const rows = supplierCriteria.map((criterion) => ({ ...criterion, score: Number(formData.get(criterion.id)) }));
+  if (!supplierName || rows.some((item) => !Number.isFinite(item.score) || item.score < 1 || item.score > 5)) return;
   const finalScore = Math.round(rows.reduce((total, item) => total + (item.score * item.weight) / 5, 0));
   const result = supplierRecommendation(finalScore);
   const output = document.querySelector("#supplier-output");
@@ -450,7 +648,7 @@ document.querySelector("#supplier-form").addEventListener("submit", (event) => {
       [
         {
           title: text("النتيجة النهائية", "Final Result"),
-          content: `<p><span class="score">${escapeHtml(text(`${finalScore}/100 — ${result.rating}`, `${finalScore}/100 — ${result.rating}`))}</span></p><p style="margin-top:12px">${escapeHtml(result.recommendation)}</p>`
+          content: `<p><span class="score">${escapeHtml(`${finalScore}/100 — ${result.rating}`)}</span></p><p style="margin-top:12px">${escapeHtml(result.recommendation)}</p>`
         },
         {
           title: text("تفاصيل التقييم", "Evaluation Details"),
@@ -459,6 +657,7 @@ document.querySelector("#supplier-form").addEventListener("submit", (event) => {
       ]
     );
   });
+  trackEvent("Supplier Score Calculated");
 });
 
 const diagnosticOptions = {
@@ -467,7 +666,7 @@ const diagnosticOptions = {
     duplication: ["تكرار في العمل", "Repeated work"],
     roles: ["عدم وضوح المسؤوليات", "Unclear responsibilities"],
     tracking: ["ضعف المتابعة أو تشتت الطلبات", "Weak follow-up or scattered requests"],
-    paper: ["اعتماد كبير على العمل الورقي", "Heavy reliance on paper work"],
+    paper: ["اعتماد كبير على العمل الورقي", "Heavy reliance on paperwork"],
     other: ["تحدٍ آخر", "Another challenge"]
   },
   location: {
@@ -531,6 +730,7 @@ document.querySelector("#map-form").addEventListener("submit", (event) => {
       ]
     );
   });
+  trackEvent("Process Diagnostic Created");
 });
 
 const requestForm = document.querySelector("#request-form");
@@ -558,9 +758,13 @@ requestForm.addEventListener("submit", async (event) => {
     renderServiceFields();
     formStatus.className = "success";
     formStatus.textContent = text("تم إرسال طلبك بنجاح. شكرًا لتواصلك.", "Your request was submitted successfully. Thank you.");
+    trackEvent("Contact Form Submitted", { service_id: selectedService ? selectedService.id : "general" });
   } catch {
     formStatus.className = "error";
-    formStatus.textContent = text("تعذر إرسال الطلب. حاول مرة أخرى أو تواصل عبر البريد الإلكتروني: almtereahmad@gmail.com", "Unable to send the request. Please try again or email: almtereahmad@gmail.com");
+    formStatus.replaceChildren(
+      document.createTextNode(text("تعذر إرسال الطلب. حاول مرة أخرى أو تواصل عبر البريد الإلكتروني: ", "Unable to send the request. Please try again or email: ")),
+      Object.assign(document.createElement("a"), { href: "mailto:almtereahmad@gmail.com", textContent: "almtereahmad@gmail.com" })
+    );
   } finally {
     submitButton.disabled = false;
   }
